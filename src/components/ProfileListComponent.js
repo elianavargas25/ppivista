@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/ProfileList.css'
-import tw_logo from '../images/twitter.png'
+import tw_logo from '../images/logo.png'
 
 class ProfileList extends React.Component{
 

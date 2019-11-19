@@ -1,5 +1,5 @@
 import React from 'react';
-import logoPoli from '../images/logoPoli.png';
+import logoPoli from '../images/logo.png';
 import '../styles/ProfileStyles.css'
 
 class Profile extends React.Component {

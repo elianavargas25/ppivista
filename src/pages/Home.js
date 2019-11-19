@@ -1,8 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+
 import che from '../images/che.png'
-import logo from '../images/logoPoli.png'
+import logo from '../images/logo.png'
 import '../styles/Home.css'
 
 function Home() {
@@ -12,7 +13,6 @@ function Home() {
 				<img src={logo} alt="Poli conf logo"/>
 				<span>
 					<h1>CONFERENCIA <br/> POLI ASAMBLEA <br/> #SomosPoli</h1>
-					<Link className="btn btn-primary"to="/profiles">Iniciar</Link>
 				</span>
 			</dir>
 			<dir className="col-img">

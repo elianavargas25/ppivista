@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 
 import ProfileList from '../components/ProfileListComponent';
-import confLogo from '../images/logoPoli.png'
+import confLogo from '../images/logo.png'
 import '../styles/Profiles.css'
 import axios from 'axios'
 class Profiles extends React.Component{
@@ -53,4 +53,4 @@ class Profiles extends React.Component{
     }
 }
 
-export default Profiles
+export default Profiles;
