@@ -17,10 +17,10 @@ function Menu() {
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">
-                                <span data-feather="file"></span>
-                                Orders
-            </a>
+                            <div className="nav-link">
+                            <Link to="/profiles/new" >Orders</Link>
+                            </div>
+
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="#">
@@ -29,7 +29,7 @@ function Menu() {
             </a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">
+                            <a className="nav-link" href="/ingresos/new">
                                 <span data-feather="users"></span>
                                 Customers
             </a>
@@ -81,8 +81,8 @@ function Menu() {
                         </li>
                     </ul>
                 </div>
-            </nav>
-        </div>
+            </nav >
+        </div >
     )
 }
 

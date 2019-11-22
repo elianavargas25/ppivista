@@ -7,6 +7,8 @@ import Menu from '../pages/Menu';
 import ProfileNew from '../pages/ProfileNew';
 import Profiles from '../pages/Profiles'
 import NotFound from '../pages/NotFound'
+import IngresosNew from '../pages/ProfileIngresos'
+
 function App(){
     return (
         <BrowserRouter>
@@ -16,6 +18,7 @@ function App(){
                     <Route exact path="/menu" component={Menu}/>
                     <Route exact path="/profiles" component={Profiles} />
                     <Route exact path="/profiles/new" component={ProfileNew} />
+                    <Route exact path="/ingresos/new" component={IngresosNew} />
                     <Route component={NotFound} />
                 </Switch>
             </Layout>
