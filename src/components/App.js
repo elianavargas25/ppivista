@@ -19,6 +19,7 @@ function App(){
                     <Route exact path="/profiles" component={Profiles} />
                     <Route exact path="/profiles/new" component={ProfileNew} />
                     <Route exact path="/ingresos/new" component={IngresosNew} />
+                    <Route exact path="/egresos/new" component={IngresosNew} />
                     <Route component={NotFound} />
                 </Switch>
             </Layout>

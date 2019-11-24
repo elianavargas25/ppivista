@@ -20,12 +20,12 @@ class ProfileFormComponent extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <h1>Nuevo Egresos</h1>
+                <h1>Nuevo Egreso</h1>
 
                 <form onSubmit={this.handleSubmit} >
                     <div className="form-group">
                         <label>Fecha</label>
-                        <div className='input-group date' id='datetimepicker3'>
+                        <div className='input-group date' id='datetimepicker3' value={this.props.formValues.fecha}>
                             <input type='text' className="form-control" />
                             <span className="input-group-addon">
                                 <span className="glyphicon glyphicon-time"></span>
@@ -39,12 +39,12 @@ class ProfileFormComponent extends React.Component {
                             className="form-control"
                             type="text"
                             name="lastName"
-                            value={this.props.formValues.lastName}
+                            value={this.props.formValues.valoregresos}
                         />
                     </div>
                     <div className="form-group">
                         <select className="custom-select d-block w-100">Categoria</select>
-                        <option value="">Choose...</option>
+                        <option value="categoria">Choose...</option>
                         <option>United States</option>
                     </div>
                     <div className="form-group">
@@ -54,7 +54,7 @@ class ProfileFormComponent extends React.Component {
                             className="form-control"
                             type="text"
                             name="jobTitle"
-                            value={this.props.formValues.jobTitle}
+                            value={this.props.formValues.descripcionegresos}
                         />
                     </div>
                     <div className="form-group">

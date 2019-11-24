@@ -11,28 +11,25 @@ function Menu() {
                 <div className="sidebar-sticky">
                     <ul className="nav flex-column">
                         <li className="nav-item">
-                            <a className="nav-link active" href="#">
-                                <span data-feather="home"></span>
-                                Dashboard <span className="sr-only">(current)</span>
-                            </a>
+                        <div className="nav-link">
+                            <Link to="/ingresos/new" >Gestión Ingresos</Link>
+                            </div>
                         </li>
                         <li className="nav-item">
                             <div className="nav-link">
-                            <Link to="/profiles/new" >Orders</Link>
+                            <Link to="/egresos/new" >Gestión Egresos</Link>
                             </div>
 
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">
-                                <span data-feather="shopping-cart"></span>
-                                Products
-            </a>
+                        <div className="nav-link">
+                            <Link to="/egresos/new" >Movimientos</Link>
+                            </div>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/ingresos/new">
-                                <span data-feather="users"></span>
-                                Customers
-            </a>
+                        <div className="nav-link">
+                            <Link to="/egresos/new" ></Link>
+                            </div>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="#">
