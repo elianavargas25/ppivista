@@ -5,9 +5,10 @@ import Layout from './Layout'
 import Home from '../pages/Home';
 import Menu from '../pages/Menu';
 import ProfileNew from '../pages/ProfileNew';
-import Profiles from '../pages/Profiles'
-import NotFound from '../pages/NotFound'
-import IngresosNew from '../pages/ProfileIngresos'
+import Profiles from '../pages/Profiles';
+import NotFound from '../pages/NotFound';
+import IngresosNew from '../pages/ProfileIngresos';
+import EgresosNew from '../pages/ProfileEgresos';
 
 function App(){
     return (
@@ -19,7 +20,7 @@ function App(){
                     <Route exact path="/profiles" component={Profiles} />
                     <Route exact path="/profiles/new" component={ProfileNew} />
                     <Route exact path="/ingresos/new" component={IngresosNew} />
-                    <Route exact path="/egresos/new" component={IngresosNew} />
+                    <Route exact path="/egresos/new" component={EgresosNew} />
                     <Route component={NotFound} />
                 </Switch>
             </Layout>
