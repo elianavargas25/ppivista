@@ -12,9 +12,9 @@ class ProfileNew extends React.Component{
             form: {
                 firstName:'',
                 lastName:'',
-                jobTitle:'',
                 email:'',
-                twitter:''
+                UserName:'',
+                password:''
             }
         }
     }
@@ -44,10 +44,9 @@ class ProfileNew extends React.Component{
                             <ProfileComponent     
                                         firstName = {this.state.form.firstName} 
                                         lastName = {this.state.form.lastName} 
-                                        jobTitle = {this.state.form.jobTitle} 
-                                        twitter = {this.state.form.twitter}
-                                        email = {this.state.form.email}  
-                                        avatarUrl = "https://s3.us-east-2.amazonaws.com/eafitrequisitos/avataaars.png"
+                                        email = {this.state.form.email} 
+                                        UserName = {this.state.form.UserName}
+                                        password = {this.state.form.password}  
                             />
                         </div>
                         <div className="col-6">

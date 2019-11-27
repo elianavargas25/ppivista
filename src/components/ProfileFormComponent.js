@@ -12,7 +12,7 @@ class ProfileFormComponent extends React.Component{
         e.preventDefault();
         console.log("Form submit")
         console.log(this.props.formValues)
-        axios.post('http://localhost:5700/api/profiles', this.props.formValues)
+        axios.post('https://finanzas-app.mileidyramos23171.now.sh/api/users', this.props.formValues)
         .then(profile => alert('Profile create <3'))
         .catch(err => alert(err))
     };
@@ -20,7 +20,7 @@ class ProfileFormComponent extends React.Component{
     render(){
         return(
             <React.Fragment>
-                <h1>Nuevo Asistente</h1>
+                <h1>Nuevo Usuario</h1>
 
                 <form onSubmit={this.handleSubmit} >
                     <div className="form-group">
@@ -55,23 +55,23 @@ class ProfileFormComponent extends React.Component{
                         />
                     </div>
                     <div className="form-group">
-                        <label>En que trabajas</label>
+                        <label>Usuario</label>
                         <input 
                             onChange={this.props.onChange} 
                             className="form-control" 
                             type="text" 
-                            name="jobTitle"
-                            value={this.props.formValues.jobTitle}
+                            name="UserName"
+                            value={this.props.formValues.UserName}
                         />
                     </div>
                     <div className="form-group">
-                        <label>Twitter</label>
+                        <label>Contraseña</label>
                         <input 
                             onChange={this.props.onChange} 
                             className="form-control" 
-                            type="text" 
-                            name="twitter"
-                            value={this.props.formValues.twitter}
+                            type="password" 
+                            name="password"
+                            value={this.props.formValues.password}
                         />
                     </div>
                     <button onClick={this.handleClick} className="btn btn-primary">Guardar</button>
