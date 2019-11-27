@@ -43,19 +43,11 @@ class ProfileFormComponent extends React.Component {
                         />
                     </div>
                     <div className="form-group">
-<<<<<<< HEAD
-                    <label>Categoria</label>
-                    <select className="custom-select d-block w-100">
-                    <option value="categoria">Seleccione una categoria</option>
-                        <option value="categoria">Choose...</option>
-                        <option>United States</option>
-=======
                     <label>Categoria Egreso</label>
                         <select className="custom-select d-block w-100">
                         <option value="">Selecciones una categoria</option>
                         <option value="categoria">Fijo</option>
                         <option>Extra</option>
->>>>>>> 25fa8e9addd2b96354d28a76222bf2234dc2c850
                         </select>
                     </div>
                     <div className="form-group">
