@@ -26,7 +26,7 @@ class ProfileFormComponent extends React.Component {
                     <div className="form-group">
                         <label>Fecha</label>
                         <div className='input-group date' id='datetimepicker3' value={this.props.formValues.fecha}>
-                            <input type='text' className="form-control" />
+                            <input type='date' id="date" className="form-control" />
                             <span className="input-group-addon">
                                 <span className="glyphicon glyphicon-time"></span>
                             </span>
@@ -38,14 +38,17 @@ class ProfileFormComponent extends React.Component {
                             onChange={this.props.onChange}
                             className="form-control"
                             type="text"
-                            name="lastName"
+                            name="valoregresos"
                             value={this.props.formValues.valoregresos}
                         />
                     </div>
                     <div className="form-group">
-                        <select className="custom-select d-block w-100">Categoria</select>
+                    <label>Categoria</label>
+                    <select className="custom-select d-block w-100">
+                    <option value="categoria">Seleccione una categoria</option>
                         <option value="categoria">Choose...</option>
                         <option>United States</option>
+                        </select>
                     </div>
                     <div className="form-group">
                         <label>Descripción del egreso</label>
@@ -53,12 +56,12 @@ class ProfileFormComponent extends React.Component {
                             onChange={this.props.onChange}
                             className="form-control"
                             type="text"
-                            name="jobTitle"
+                            name="jobTidescripcionegresostle"
                             value={this.props.formValues.descripcionegresos}
                         />
                     </div>
                     <div className="form-group">
-                        <label>Twitter</label>
+                        <label>Tipo de ingreso</label>
                         <input
                             onChange={this.props.onChange}
                             className="form-control"

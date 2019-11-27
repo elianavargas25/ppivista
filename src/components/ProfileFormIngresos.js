@@ -24,12 +24,12 @@ class ProfileFormComponent extends React.Component{
 
                 <form onSubmit={this.handleSubmit} >
                     <div className="form-group">
-                        <label>Fecha</label>
+                        <label type="date" id="date">Fecha</label>
                         <input 
                             onChange={this.props.onChange} 
                             className="form-control" 
                             type="text" 
-                            name="firstName"
+                            name="fecha"
                             value={this.props.formValues.fecha}
                         />
                     </div>
@@ -39,14 +39,17 @@ class ProfileFormComponent extends React.Component{
                             onChange={this.props.onChange} 
                             className="form-control" 
                             type="text" 
-                            name="lastName"
+                            name="valoringreso"
                             value={this.props.formValues.valoringreso}
                         />
                     </div>
                     <div className="form-group">
-                        <select className="custom-select d-block w-100">Categoria</select>
+                    <label>Categoria</label>
+                        <select className="custom-select d-block w-100">
+                        <option value="categoria">Seleccione una categoria</option>
                         <option value="categoria">Choose...</option>
                         <option>United States</option>
+                        </select>
                     </div>
                     <div className="form-group">
                         <label>Descripción del ingresos</label>
@@ -54,7 +57,7 @@ class ProfileFormComponent extends React.Component{
                             onChange={this.props.onChange} 
                             className="form-control" 
                             type="text" 
-                            name="jobTitle"
+                            name="descripcioningreso"
                             value={this.props.formValues.descripcioningreso}
                         />
                     </div>
