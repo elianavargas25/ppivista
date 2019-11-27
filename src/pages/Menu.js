@@ -11,25 +11,27 @@ function Menu() {
                 <div className="sidebar-sticky">
                     <ul className="nav flex-column">
                         <li className="nav-item">
-                        <div className="nav-link">
-                            <Link to="/ingresos/new" >Gestión Ingresos</Link>
+                            <div className="nav-link">
+                                <Link to="/ingresos/new" >Gestión Ingresos</Link>
                             </div>
                         </li>
                         <li className="nav-item">
                             <div className="nav-link">
-                            <Link to="/egresos/new" >Gestión Egresos</Link>
+                                <Link to="/egresos/new" >Gestión Egresos</Link>
                             </div>
 
                         </li>
                         <li className="nav-item">
-                        <div className="nav-link">
-                            <Link to="/egresos/new" >Movimientos</Link>
+                            <div className="nav-link">
+                                <Link to="/egresos/new" >Movimientos</Link>
                             </div>
                         </li>
                         <li className="nav-item">
-                        <div className="nav-link">
-                            <Link to="/egresos/new" ></Link>
-                            </div>
+                            <li className="nav-item">
+                                <div className="nav-link">
+                                    <Link to="/profiles/new" >Usuarios</Link>
+                                </div>
+                            </li>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="#">

@@ -12,7 +12,7 @@ class ProfileFormComponent extends React.Component{
         e.preventDefault();
         console.log("Form submit")
         console.log(this.props.formValues)
-        axios.post('http://localhost:5700/api/profiles', this.props.formValues)
+        axios.post('https://finanzas-app.mileidyramos23171.now.sh/api/ingresos/', this.props.formValues)
         .then(profile => alert('Profile create <3'))
         .catch(err => alert(err))
     };
@@ -44,11 +44,19 @@ class ProfileFormComponent extends React.Component{
                         />
                     </div>
                     <div className="form-group">
+<<<<<<< HEAD
                     <label>Categoria</label>
                         <select className="custom-select d-block w-100">
                         <option value="categoria">Seleccione una categoria</option>
                         <option value="categoria">Choose...</option>
                         <option>United States</option>
+=======
+                    <label>Categoria ingreso</label>
+                        <select className="custom-select d-block w-100">
+                        <option value="">Seleccione una categoria</option>
+                        <option value="categoria">Fijo</option>
+                        <option>Extra</option>
+>>>>>>> 25fa8e9addd2b96354d28a76222bf2234dc2c850
                         </select>
                     </div>
                     <div className="form-group">
