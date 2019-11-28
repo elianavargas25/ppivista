@@ -22,7 +22,8 @@ class ProfileFormComponent extends React.Component {
             <React.Fragment>
                 <h1>Nuevo Egreso</h1>
 
-                <form onSubmit={this.handleSubmit} >
+                <form className="border border-info" onSubmit={this.handleSubmit} >
+                    <br></br>
                     <div className="form-group">
                         <label>Fecha</label>
                         <div className='input-group date' id='datetimepicker3' value={this.props.formValues.fecha}>
@@ -33,7 +34,7 @@ class ProfileFormComponent extends React.Component {
                         </div>
                     </div>
                     <div className="form-group">
-                        <label>Valor del egreso</label>
+                        <label>Valor del Egreso</label>
                         <input
                             onChange={this.props.onChange}
                             className="form-control"
@@ -44,14 +45,19 @@ class ProfileFormComponent extends React.Component {
                     </div>
                     <div className="form-group">
                     <label>Categoria Egreso</label>
-                        <select className="custom-select d-block w-100">
-                        <option value="">Selecciones una categoria</option>
-                        <option value="categoria">Fijo</option>
-                        <option>Extra</option>
-                        </select>
-                    </div>
+                        <div class="radio">
+                            <label><input type="radio" name="optradio" checked></input>   Option 1</label>
+                        </div>
+                            <div class="radio">
+                                <label><input type="radio" name="optradio"></input>   Option 2</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="optradio"></input>   Option 3</label>
+                            </div>
+                                
+                     </div>
                     <div className="form-group">
-                        <label>Descripción del egreso</label>
+                        <label>Descripción del Egreso</label>
                         <input
                             onChange={this.props.onChange}
                             className="form-control"
@@ -60,21 +66,26 @@ class ProfileFormComponent extends React.Component {
                             value={this.props.formValues.descripcionegresos}
                         />
                     </div>
+
+                    <label>Tipo de Egreso</label>
                     <div className="form-group">
-                        <label>Tipo de ingreso</label>
-                        <input
-                            onChange={this.props.onChange}
-                            className="form-control"
-                            type="text"
-                            name="twitter"
-                            value={this.props.formValues.twitter}
-                        />
-                    </div>
-                    <button onClick={this.handleClick} className="btn btn-primary">Guardar</button>
+                        <div class="radio">
+                            <label><input type="radio" name="optradio1" checked></input>   Option 1</label>
+                        </div>
+                            <div class="radio">
+                                <label><input type="radio" name="optradio1"></input>   Option 2</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="optradio1"></input>   Option 3</label>
+                            </div>
+                                
+                     </div>
+
+                         <button onClick={this.handleClick} className="btn btn-primary">Guardar</button>
                 </form>
             </React.Fragment>
-        )
-    }
-}
-
+                    )
+                }
+            }
+            
 export default ProfileFormComponent;

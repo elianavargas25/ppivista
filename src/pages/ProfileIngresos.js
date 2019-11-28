@@ -14,7 +14,7 @@ class ProfileNew extends React.Component{
                 valoringreso:'',
                 categoria:'',
                 descripcioningreso:'',
-                twitter:''
+                tipoingreso:''
             }
         }
     }
@@ -40,7 +40,7 @@ class ProfileNew extends React.Component{
                                         valoringreso = {this.state.form.valoringreso} 
                                         categoria = {this.state.form.categoria} 
                                         descripcioningreso = {this.state.form.descripcioningreso}
-                                        twitter = {this.state.form.twitter}  
+                                        tipoingreso = {this.state.form.tipoingreso}  
                                         avatarUrl = "https://s3.us-east-2.amazonaws.com/eafitrequisitos/avataaars.png"
                             />
                         </div>

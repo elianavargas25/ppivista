@@ -22,19 +22,18 @@ class ProfileFormComponent extends React.Component{
             <React.Fragment>
                 <h1>Nuevo Ingreso</h1>
 
-                <form onSubmit={this.handleSubmit} >
-                    <div className="form-group">
-                        <label type="date" id="date">Fecha</label>
-                        <input 
-                            onChange={this.props.onChange} 
-                            className="form-control" 
-                            type="text" 
-                            name="fecha"
-                            value={this.props.formValues.fecha}
-                        />
+                <form className="border border-info" onSubmit={this.handleSubmit} >
+                    <div className="form-group" type="date" id="date">
+                        <label >Fecha</label>
+                        <div className='input-group date' id='datetimepicker3' value={this.props.formValues.fecha}>
+                            <input type='date' id="date" className="form-control" />
+                            <span className="input-group-addon">
+                                <span className="glyphicon glyphicon-time"></span>
+                            </span>
+                        </div>
                     </div>
                     <div className="form-group">
-                        <label>Valor del ingreso</label>
+                        <label>Valor del Ingreso</label>
                         <input 
                             onChange={this.props.onChange} 
                             className="form-control" 
@@ -44,15 +43,20 @@ class ProfileFormComponent extends React.Component{
                         />
                     </div>
                     <div className="form-group">
-                    <label>Categoria ingreso</label>
-                        <select className="custom-select d-block w-100">
-                        <option value="">Seleccione una categoria</option>
-                        <option value="categoria">Fijo</option>
-                        <option>Extra</option>
-                        </select>
-                    </div>
+                    <label>Categoria Ingreso</label>
+                        <div class="radio">
+                            <label><input type="radio" name="optradio" checked></input>   Option 1</label>
+                        </div>
+                            <div class="radio">
+                                <label><input type="radio" name="optradio"></input>   Option 2</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="optradio"></input>   Option 3</label>
+                            </div>
+                                
+                     </div>
                     <div className="form-group">
-                        <label>Descripción del ingresos</label>
+                        <label>Descripción del Ingresos</label>
                         <input 
                             onChange={this.props.onChange} 
                             className="form-control" 
@@ -62,15 +66,18 @@ class ProfileFormComponent extends React.Component{
                         />
                     </div>
                     <div className="form-group">
-                        <label>Twitter</label>
-                        <input 
-                            onChange={this.props.onChange} 
-                            className="form-control" 
-                            type="text" 
-                            name="twitter"
-                            value={this.props.formValues.twitter}
-                        />
-                    </div>
+                    <label>Tipo Ingreso</label>
+                        <div class="radio">
+                            <label><input type="radio" name="optradio1" checked></input>   Option 1</label>
+                        </div>
+                            <div class="radio">
+                                <label><input type="radio" name="optradio1"></input>   Option 2</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="optradio1"></input>   Option 3</label>
+                            </div>
+                                
+                     </div>
                     <button onClick={this.handleClick} className="btn btn-primary">Guardar</button>
                 </form>
             </React.Fragment>
