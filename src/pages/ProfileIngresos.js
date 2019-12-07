@@ -1,12 +1,12 @@
 import React from 'react';
-import ProfileComponent from '../components/ProfileComponent'
-import ProfileForm from '../components/ProfileFormIngresos'
+import ProfileComponent from '../components/ProfileComponent';
+import ProfileForm from '../components/ProfileFormIngresos';
 import '../styles/ProfileNew.css'
 import axios from 'axios';
 
-class ProfileNew extends React.Component{
+class ProfileNew extends React.Component {
 
-    constructor(props){
+    constructor(props) {
         super(props)
         this.state = {
             form: {
@@ -19,7 +19,7 @@ class ProfileNew extends React.Component{
         }
     }
 
-    handleChange = e =>{
+    handleChange = e => {
         this.setState({
             form: {
                 ...this.state.form,
@@ -28,10 +28,10 @@ class ProfileNew extends React.Component{
         })
     }
 
-    render(){
-        return(
+    render() {
+        return (
             <React.Fragment>
-                
+
                 <div className="container">
                     <div className="row">
                         <div className="col-6">
@@ -40,14 +40,12 @@ class ProfileNew extends React.Component{
                                         valoringreso = {this.state.form.valoringreso} 
                                         categoria = {this.state.form.categoria} 
                                         descripcioningreso = {this.state.form.descripcioningreso}
-                                        tipoingreso = {this.state.form.tipoingreso}  
-                                        avatarUrl = "https://s3.us-east-2.amazonaws.com/eafitrequisitos/avataaars.png"
-                            />
+                                        tipoingreso = {this.state.form.tipoingreso}/>
                         </div>
                         <div className="col-6">
-                            <ProfileForm 
+                            <ProfileForm
                                 onChange={this.handleChange}
-                                formValues={this.state.form} 
+                                formValues={this.state.form}
                             />
                         </div>
                     </div>
