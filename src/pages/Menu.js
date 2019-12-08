@@ -34,10 +34,11 @@ function Menu() {
                             </li>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">
-                                <span data-feather="bar-chart-2"></span>
-                                Reports
-            </a>
+                            <li className="nav-item">
+                                <div className="nav-link">
+                                    <Link to="/cambiarcontrasena/new" >Cambiar Contraseña</Link>
+                                </div>
+                            </li>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="#">

@@ -32,10 +32,9 @@ function Menu() {
                             </div>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">
-                                <span data-feather="bar-chart-2"></span>
-                                Reports
-            </a>
+                            <div className="nav-link">
+                                <Link to="/graficas/new" >Graficas</Link>
+                            </div>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="#">
