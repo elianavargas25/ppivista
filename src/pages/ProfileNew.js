@@ -16,6 +16,7 @@ class ProfileNew extends React.Component{
                 UserName:'',
                 password:''
             }
+           // listProfiles: []
         }
     }
 
@@ -27,6 +28,16 @@ class ProfileNew extends React.Component{
             },
         })
     }
+
+    componentDidMount(){  
+        axios.get('http://localhost:5700/api/user')
+        .then(res =>{
+            this.setState({
+                form: res.data
+            })
+        }).catch(err => console.log(err))
+    }
+
 
     render(){
         return(
