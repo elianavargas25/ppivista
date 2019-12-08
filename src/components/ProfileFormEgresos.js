@@ -20,31 +20,35 @@ class ProfileFormComponent extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <h1>Nuevo Egreso</h1>
+                <br></br>
+                <br></br>
+                <br></br>
+                <h2>Nuevo Egreso</h2>
 
                 <form className="border border-info" onSubmit={this.handleSubmit} >
                     <br></br>
                     <div className="form-group">
-                        <label>Fecha</label>
+                        <label>* Fecha</label>
                         <div className='input-group date' id='datetimepicker3' value={this.props.formValues.fecha}>
-                            <input type='date' id="date" className="form-control" />
+                            <input type='date' id="date" className="form-control" required/>
                             <span className="input-group-addon">
                                 <span className="glyphicon glyphicon-time"></span>
                             </span>
                         </div>
                     </div>
                     <div className="form-group">
-                        <label>Valor del Egreso</label>
+                        <label>* Valor del Egreso</label>
                         <input
                             onChange={this.props.onChange}
                             className="form-control"
                             type="text"
                             name="valoregresos"
                             value={this.props.formValues.valoregresos}
+                            required
                         />
                     </div>
-                    <div className="form-group">
-                    <label>Categoria Egreso</label>
+                    <div className="form-group"  required>
+                    <label>* Categoria Egreso</label>
                         <div class="radio">
                             <label><input type="radio" name="optradio" checked></input>   Option 1</label>
                         </div>
@@ -57,19 +61,20 @@ class ProfileFormComponent extends React.Component {
                                 
                      </div>
                     <div className="form-group">
-                        <label>Descripción del Egreso</label>
+                        <label>* Descripción del Egreso</label>
                         <input
                             onChange={this.props.onChange}
                             className="form-control"
                             type="text"
-                            name="jobTidescripcionegresostle"
+                            name="descripcionegresos"
                             value={this.props.formValues.descripcionegresos}
+                            required
                         />
                     </div>
 
-                    <label>Tipo de Egreso</label>
+                    <label>* Tipo de Egreso</label>
                     <div className="form-group">
-                        <div class="radio">
+                        <div class="radio" required>
                             <label><input type="radio" name="optradio1" checked></input>   Option 1</label>
                         </div>
                             <div class="radio">
@@ -80,8 +85,9 @@ class ProfileFormComponent extends React.Component {
                             </div>
                                 
                      </div>
-
+                    
                          <button onClick={this.handleClick} className="btn btn-primary">Guardar</button>
+                        
                 </form>
             </React.Fragment>
                     )

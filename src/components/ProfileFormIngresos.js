@@ -20,44 +20,49 @@ class ProfileFormComponent extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <h1>Nuevo Ingreso</h1>
+                <br></br>
+                <br></br>
+                <br></br>
+                <h2>Nuevo Ingreso</h2>
 
                 <form className="border border-info" onSubmit={this.handleSubmit} >
                     <div className="form-group" type="date" id="date">
-                        <label >Fecha</label>
+                        <label >* Fecha</label>
                         <div className='input-group date' id='datetimepicker3' value={this.props.formValues.fecha}>
-                            <input type='date' id="date" className="form-control" />
+                            <input type='date' id="date" className="form-control" required/>
                             <span className="input-group-addon">
                                 <span className="glyphicon glyphicon-time"></span>
                             </span>
                         </div>
                     </div>
                     <div className="form-group">
-                        <label>Valor del Ingreso</label>
+                        <label>* Valor del Ingreso</label>
                         <input
                             onChange={this.props.onChange}
                             className="form-control"
                             type="text"
                             name="valoringreso"
                             value={this.props.formValues.valoringreso}
+                            required
                         />
                     </div>
                     <div className="form-group">
-                        <label>categoria Ingreso</label>
-                        <select className="custom-select d-block w-100" name="categoria">
+                        <label>* categoria Ingreso</label>
+                        <select className="custom-select d-block w-100" name="categoria" required>
                             <option value="">Seleccione una categoria</option>
                             <option value={this.props.formValues.categoria}>Nomina</option>
                             <option value={this.props.formValues.categoria}>Estras</option>
                         </select>
                     </div>
                     <div className="form-group">
-                        <label>Descripción del ingresos</label>
+                        <label>* Descripción del ingreso</label>
                         <input
                             onChange={this.props.onChange}
                             className="form-control"
                             type="text"
                             name="descripcioningreso"
                             value={this.props.formValues.descripcioningreso}
+                            required
                         />
                     </div>
 
