@@ -28,8 +28,21 @@ function Menu() {
                         </li>
                         <li className="nav-item">
                             <div className="nav-link">
-                                <Link to="/profiles/new" >Usuarios</Link>
+                                <div >Usuarios</div>
                             </div>
+                            <ul>
+                                <li className="nav-item">
+                                    <div className="nav-link">
+                                        <Link to="/profiles/new" >Usuarios</Link>
+                                    </div>
+                                </li>
+
+                                <li className="nav-item">
+                                    <div className="nav-link">
+                                        <Link to="/cambiarcontrasena/new" >Cambiar Contraseña</Link>
+                                    </div>
+                                </li>
+                            </ul>
                         </li>
                         <li className="nav-item">
                             <div className="nav-link">

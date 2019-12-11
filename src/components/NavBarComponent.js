@@ -10,16 +10,17 @@ class NavBarComponent extends Component {
     render() {
         return (
             <div className="Navbar">
-                <nav className="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
 
-                    <Link className="link" to="/">
-                        <img className="Navbar__brand-logo" src={logo} alt="Logo" /></Link>
-                    <input className="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search" />
-                    <ul className="navbar-nav px-3">
-                        <li className="nav-item text-nowrap">
-                            <Link className="link" to="/menu">Cerrar Sesión</Link>
-                        </li>
-                    </ul>
+                <nav className="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+                    <div className="container">
+                        <Link className="link" to="/">
+                            <img className="Navbar__brand-logo" src={logo} alt="Logo" /></Link>
+                        <ul className="navbar-nav px-3">
+                            <li className="nav-item text-nowrap">
+                                <Link className="link" to="/menu">Cerrar Sesión</Link>
+                            </li>
+                        </ul>
+                    </div>
                 </nav>
                 <nav className="col-md-2 d-none d-md-block bg-light sidebar">
                     <div className="sidebar-sticky">
@@ -55,6 +56,7 @@ class NavBarComponent extends Component {
                     </div>
                 </nav>
             </div>
+
         )
     }
 }

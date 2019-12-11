@@ -7,7 +7,10 @@ class Profile extends React.Component {
                 
         return(
             <div className="Profile">
-                <div className="Profile__header">
+                <div className="pr">
+                    <br></br>
+                    <br></br>
+                    <br></br>
                     <img className="Profile__logo" src={logoPoli} alt="Logo del Poli" />
                 </div>
                 

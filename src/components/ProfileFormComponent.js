@@ -17,6 +17,15 @@ class ProfileFormComponent extends React.Component{
         .catch(err => alert(err))
     };
 
+   async componentDidMount(){  
+       const res =await axios.get('https://finanzas-app.mileidyramos23171.now.sh/api/users')
+        .then(res =>{
+            this.setState({
+                form: res.data
+            })
+        }).catch(err => console.log(err))
+    }
+
     render(){
         return(
             <React.Fragment>

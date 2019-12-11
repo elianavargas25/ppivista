@@ -16,6 +16,8 @@ class ProfileList extends React.Component{
                                 <br/>
                                 {profile.jobTitle}
                                 <br/>
+                                <br/>
+                                <br/>
                                 <img alt="logo-twiter" src={tw_logo} className="tw__logo"/>
                                 <span className="twitter_blue_font">{profile.twitter}</span>
                             </div>

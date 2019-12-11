@@ -12,7 +12,7 @@ class ProfileFormComponent extends React.Component {
         e.preventDefault();
         console.log("Form submit")
         console.log(this.props.formValues)
-        axios.post('http://localhost:5700/api/profiles', this.props.formValues)
+        axios.put('http://localhost:5700/api/user', this.props.formValues)
             .then(profile => alert('Profile create <3'))
             .catch(err => alert(err))
     };
@@ -23,6 +23,8 @@ class ProfileFormComponent extends React.Component {
                <br></br>
                 <br></br>
                 <br></br>
+                <br/>
+                <br/>
                 <h2>Cambiar Contraseña</h2>
 
                 <form className="border border-info" onSubmit={this.handleSubmit} >
