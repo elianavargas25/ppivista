@@ -29,23 +29,28 @@ function Menu() {
                         <li className="nav-item">
                             <li className="nav-item">
                                 <div className="nav-link">
-                                    <Link to="/profiles/new" >Usuarios</Link>
+                                    <span data-feather="layers"></span>
+                                    Integrations
                                 </div>
                             </li>
+                            <ul>
+                                <li className="nav-item">
+                                    <li className="nav-item">
+                                        <div className="nav-link">
+                                            <Link to="/profiles/new" >Usuarios</Link>
+                                        </div>
+                                    </li>
+                                </li>
+                                <li className="nav-item">
+                                    <li className="nav-item">
+                                        <div className="nav-link">
+                                            <Link to="/cambiarcontrasena/new" >Cambiar Contraseña</Link>
+                                        </div>
+                                    </li>
+                                </li>
+                            </ul>
                         </li>
-                        <li className="nav-item">
-                            <li className="nav-item">
-                                <div className="nav-link">
-                                    <Link to="/cambiarcontrasena/new" >Cambiar Contraseña</Link>
-                                </div>
-                            </li>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#">
-                                <span data-feather="layers"></span>
-                                Integrations
-            </a>
-                        </li>
+
                     </ul>
 
                     <h6 className="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
