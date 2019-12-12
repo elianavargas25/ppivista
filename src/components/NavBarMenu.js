@@ -50,10 +50,9 @@ function Menu() {
                             </div>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">
-                                <span data-feather="layers"></span>
-                                Integrations
-            </a>
+                        <div className="nav-link">
+                                <Link to="/table" >Tabla</Link>
+                            </div>
                         </li>
                     </ul>
 

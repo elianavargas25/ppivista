@@ -23,7 +23,7 @@ class ProfileFormComponent extends React.Component {
         const res = await axios.get('https://finanzas-app.mileidyramos23171.now.sh/api/users')
             .then(res => {
                 this.setState({
-                    form: res.data
+                    users: res.data
                 })
             }).catch(err => console.log(err))
     }
@@ -88,7 +88,7 @@ class ProfileFormComponent extends React.Component {
                     <button onClick={this.handleClick} className="btn btn-primary">Guardar</button>
 
                     <div className="container">
-                        <div className="col-md-8">
+                        <div className="">
                             <ul className="list-group">
                                 {
                                     this.state.users.map(user => (
